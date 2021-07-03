@@ -1,0 +1,177 @@
+body,html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+    text-align: center;
+    background: -webkit-radial-gradient(rgb(0, 54, 85),rgb(0, 4, 43),black);
+    color: rgb(255, 216, 168);
+}
+.nuves{
+    width: 220px;
+    height: 220px;
+    /*border: 1px solid red;*/
+
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.mapa{
+    width: 200px;
+    height: 200px;
+    /*border:1px solid red;*/
+    /*background-color: lightblue;*/
+    border-radius: 50%;
+    box-shadow: -40px -20px 0 0 rgba(0, 0, 0, .15) inset,
+    -70px -30px 0 0 rgba(0, 0, 0, .15) inset,
+    5px 5px 0 0 rgba(225, 255, 255, .15) inset;
+    background: url(photo/fotonoticia_20150212135653_1024.jpg);
+    background-size: cover;
+    -webkit-animation: tierra-girando 15s infinite linear;
+}
+@-webkit-keyframes tierra-girando {
+    from{background-position: left center;}
+    to{background-position:-512px center;}
+}
+
+/* estrellas */
+.estella{
+    width: 2px;
+    height: 2px;
+/*     background-color: rgb(255, 255, 255);  */
+    position: absolute;
+    /*top: 20%;
+    left: 50%;*/
+    border-radius: 50%;
+     animation: color 1s infinite;
+    /* box-shadow: 0 0 5px 5px rgb(255, 255, 255,.35) ; */
+}
+
+.a{
+ top: 90%;
+ left: 93%;
+}
+.b{
+    top: 80%;
+    left: 52%;
+}
+.c{
+    top: 60%;
+    left: 90%;
+}
+.d{
+    top: 10%;
+    left: 90%;
+}
+.e{
+    top:40% ;
+    left:40% ;
+}
+.f{
+    top: 19%;
+    left: 30%;
+}
+.g{
+    top: 44% ;
+    left: 70%;
+}
+.h{
+    top: 29%;
+    left: 20%;
+}
+.i{
+    top: 70%;
+    left: 32%;
+}
+.j{
+    top: 85%;
+    left: 70%;
+}
+.k{
+    top: 7%;
+    left: 13%;
+}
+.l{
+    top: 4%;
+    left: 30%;
+}
+.m{
+    top: 90%;
+    left: 22%;
+}
+.n{
+    top: 11%;
+    left: 75%;
+}
+.ñ{
+    top: 8%;
+    left: 66%;
+}
+.o{
+    top: 8%;
+    left: 34%;
+}
+.p{
+    top: 30%;
+    left: 7%;
+}
+.q{
+    top: 40%;
+    left: 92%;
+}
+.r{
+    top: 20%;
+    left: 50%;
+}
+.s{
+    top: 75%;
+    left: 1%;
+} 
+
+.estella:nth-child(n){
+    -webkit-animation: estrella-par 8s infinite;
+
+}
+
+@-webkit-keyframes estrella-par{
+
+    0%, 90% {box-shadow: 0 0 2px 2px rgba(255, 255, 255, .35);background-color: rgba(229, 255, 0, 0.788);}
+    10% {background-color: rgba(51, 255, 0, 0.788);}
+    20% {background-color: rgba(25, 0, 255, 0.685);}
+    30% {background-color: rgba(0, 255, 242, 0.74);}
+    40% {background-color: rgba(255, 0, 234, 0.74);}
+    50% {background-color: rgba(255, 217, 0, 0.781);}
+    60% {background-color: rgba(0, 255, 64, 0.781);}
+    70% {background-color: rgba(0, 38, 255, 0.788);}
+    80% {background-color: rgba(255, 0, 0, 0.795);}
+    90% {background-color: rgba(0, 255, 42, 0.795);}
+    100%{box-shadow: 0 0 10px 10px rgb(255, 255, 255,0.35);background-color: rgba(229, 255, 0, 0.788);}
+}
+
+.estella:nth-child(2n+1){
+    -webkit-animation: estrella-impar 8s infinite;
+}
+
+@-webkit-keyframes estrella-impar{
+
+    0%, 35%, 50% {box-shadow: 0 0 2px 2px rgba(255, 255, 255, .35);}
+    
+    45%{box-shadow: 0 0 10px 10px rgb(255, 255, 255,0.35);}
+
+    10% {background-color: rgba(255, 0, 170, 0.788);}
+    20% {background-color: rgba(0, 255, 34, 0.685);}
+    30% {background-color: rgba(255, 238, 0, 0.74);}
+    40% {background-color: rgba(255, 0, 0, 0.74);}
+    50% {background-color: rgba(0, 255, 255, 0.781);}
+    60% {background-color: rgba(0, 255, 64, 0.781);}
+    70% {background-color: rgba(255, 0, 0, 0.788);}
+    80% {background-color: rgba(255, 0, 200, 0.795);}
+    90% {background-color: rgba(0, 255, 42, 0.795);}
+
+} 
